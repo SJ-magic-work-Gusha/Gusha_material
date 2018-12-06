@@ -54,5 +54,6 @@ public:
 	void update(float _now);
 	void draw();
 	void publish_syphon();
+	void SeekToTop();
 };
 

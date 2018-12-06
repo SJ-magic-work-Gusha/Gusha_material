@@ -172,6 +172,10 @@ void ofApp::keyPressed(int key){
 			b_ShowFrameRate = !b_ShowFrameRate;
 			break;
 			
+		case 'p':
+			mov.SeekToTop();
+			break;
+			
 		case ' ':
 			if(GPIO_0 == 0){
 				GPIO_0 = 1;

@@ -71,6 +71,15 @@ void MOV::setup_video(ofxHapPlayer& video)
 
 /******************************
 ******************************/
+void MOV::SeekToTop()
+{
+	if(video.isLoaded()){
+		video.setPosition(0); // percent.
+	}
+}
+
+/******************************
+******************************/
 void MOV::update(float _now)
 {
 	if(Gui_Global->b_mov && video.isLoaded()){
